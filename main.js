@@ -1,6 +1,60 @@
 /********************
  * YOUR CODE BELOW! *
  ********************/
+let x;
+let y;
+
+function moreThan5(x) {
+  return x > 5;
+}
+
+function isNewTopScore(x, y){
+  return x > y;
+}
+
+function isInDanger(x, y) {
+  x = x >= 60;
+  y = y <= 71;
+  z = x && y;
+  return z;
+}
+
+function isCoasting(x) {
+  return;
+}
+function isSucceeding(x) {
+  return;
+}
+function isFailing(x) {
+  return x < 60;
+}
+function isAcing(x) {
+  return x > 92;; 
+}
+function isStudent(x) {
+  return x === 'student';
+}
+function isTeacher(x) {
+  return x === 'teacher';
+}
+function isAdmin(x) {
+  return x === 'admin';
+}
+function isElementary(x) {
+  return x === 'elementary';
+}
+function areDifferentPeople(x, y) {
+  return x !== y;
+}
+function isMiddleSchoolTeacher(x, y) {
+  return;
+}
+function notAnElementarySchoolAdministrator(x, y) {
+  x = x !== 'elementary school';
+  y = y !== 'administrator';
+  z === true
+  return z;
+}
 
 
 
