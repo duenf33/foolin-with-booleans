@@ -12,18 +12,15 @@ function isNewTopScore(x, y){
   return x > y;
 }
 
-function isInDanger(x, y) {
-  x = x >= 60;
-  y = y <= 71;
-  z = x && y;
-  return z;
+function isInDanger(x) {
+  return x >= 60 && x <= 71;
 }
 
 function isCoasting(x) {
-  return;
+  return x >= 72 && x <=83;
 }
 function isSucceeding(x) {
-  return;
+  return x >= 84 && x <= 92;
 }
 function isFailing(x) {
   return x < 60;
@@ -47,13 +44,11 @@ function areDifferentPeople(x, y) {
   return x !== y;
 }
 function isMiddleSchoolTeacher(x, y) {
-  return;
+  return x === 'teacher' && y >= 6 && y <= 8;
 }
 function notAnElementarySchoolAdministrator(x, y) {
-  x = x !== 'elementary school';
-  y = y !== 'administrator';
-  z === true
-  return z;
+  return x !== 'elementary' || y !== 'admin';
+
 }
 
 
